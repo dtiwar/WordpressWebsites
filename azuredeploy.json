@@ -44,7 +44,7 @@
               "value": "false"
             }
           ],
-          "linuxFxVersion": "DOCKER|nginx:alpine"
+          "linuxFxVersion": "DOCKER|sentiacr.azurecr.io/newimage:56"
         },
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('servicePlanName'))]"
       },
