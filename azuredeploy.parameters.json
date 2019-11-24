@@ -11,10 +11,7 @@
       "location": {
         "value": "West Europe"
       },
-      "hostingEnvironment": {
-        "value": ""
-      },
-      "hostingPlanName": {
+       "hostingPlanName": {
         "value": "ASP-SentiaAssigment-9cb2"
       },
       "serverFarmResourceGroup": {

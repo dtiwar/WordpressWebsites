@@ -68,7 +68,6 @@
           "linuxFxVersion": "[parameters('linuxFxVersion')]",
           "alwaysOn": "[parameters('alwaysOn')]"
         },
-        "hostingEnvironment": "[parameters('hostingEnvironment')]",
         "clientAffinityEnabled": false
       }
     },
