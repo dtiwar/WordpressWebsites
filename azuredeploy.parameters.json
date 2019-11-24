@@ -2,44 +2,8 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "subscriptionId": {
-      "value": "5cdb6541-5702-4c8a-af68-04957368df6e"
-    },
-    "name": {
+    "siteName": {
       "value": "sentiawordpress"
-    },
-    "location": {
-      "value": "West Europe"
-    },
-     "hostingPlanName": {
-      "value": "ASP-SentiaAssigment-9cb2"
-    },
-    "serverFarmResourceGroup": {
-      "value": "SentiaAssigment"
-    },
-    "alwaysOn": {
-      "value": true
-    },
-    "sku": {
-      "value": "PremiumV2"
-    },
-    "skuCode": {
-      "value": "P1v2"
-    },
-    "workerSize": {
-      "value": "3"
-    },
-    "workerSizeId": {
-      "value": "3"
-    },
-    "numberOfWorkers": {
-      "value": "1"
-    },
-    "linuxFxVersion": {
-      "value": "DOCKER|nginx:alpine"
-    },
-    "dockerRegistryUrl": {
-      "value": "https://index.docker.io"
     }
   }
 }
