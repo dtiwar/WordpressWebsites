@@ -3,15 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "sites_sentiawordpress_name": {
-      "defaultValue": "sentiawordpress",
-      "type": "String"
-    },
-    "serverfarms_ASP_SentiaAssigment_9c1f_externalid": {
-      "defaultValue": "/subscriptions/5cdb6541-5702-4c8a-af68-04957368df6e/resourceGroups/SentiaAssigment/providers/Microsoft.Web/serverfarms/ASP-SentiaAssigment-9c1f",
       "type": "String"
     }
   },
-  "variables": {},
+   "variables": {},
   "resources": [
     {
       "type": "Microsoft.Web/sites",
@@ -33,7 +28,6 @@
             "hostType": "Repository"
           }
         ],
-        "serverFarmId": "[parameters('serverfarms_ASP_SentiaAssigment_9c1f_externalid')]",
         "reserved": true,
         "isXenon": false,
         "hyperV": false,
