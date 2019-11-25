@@ -20,7 +20,7 @@ steps:
   displayName: 'Run a multi-line script'
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: '/db/wordpressmysqldump.sql'
+    PathtoPublish: '$(Build.SourcesDirectory)/db/)'
+    ArtifactName: 'wordpressmysqldump.sql'
     publishLocation: 'Container'
   
