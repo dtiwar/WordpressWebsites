@@ -11,9 +11,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: PublishBuildArtifacts@1
+- task: CopyFiles@2
   inputs:
-    PathtoPublish: '$(Build.SourcesDirectory)/db/)'
-    ArtifactName: 'wordpressmysqldump.sql'
-    publishLocation: 'Container'
+    SourceFolder: '$(Agent.BuildDirectory)'
+    Contents: '**'
+    TargetFolder: '$(build.artifactstagingdirectory)'
   
