@@ -11,5 +11,8 @@
     "dockerRegistryUsername": {
       "value": "sentiacr"
     }
+  },
+  "dockerRegistryPassword": {
+    "value": "fmhl5zZ0=KcG04XXwyWAnOvX/6QncAPF"
   }
 }
