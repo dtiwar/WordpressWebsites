@@ -21,8 +21,6 @@
 
 CREATE DATABASE /*!32312 IF NOT EXISTS*/ `wordpress01` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
-USE `wordpress01`;
-
 --
 -- Table structure for table `wp_commentmeta`
 --
