@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '942d3202-526c-40be-8eaa-716577637fcd'
+  dockerRegistryServiceConnection: 'cc5480d0-8cf9-4ff2-82f2-7994c38749f4'
   imageRepository: 'dtiwarwordpresswebsites'
   containerRegistry: 'sentiacr.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
@@ -18,7 +18,6 @@ variables:
   
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
-
 
 stages:
 - stage: Build
@@ -50,5 +49,4 @@ stages:
         csmFile: '$(Build.SourcesDirectory)/azuredeploy.json'
         csmParametersFile: '$(Build.SourcesDirectory)/azuredeploy.parameters.json'
         deploymentMode: 'Incremental'
-
-
+     
