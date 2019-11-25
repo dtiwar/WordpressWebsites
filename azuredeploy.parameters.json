@@ -4,6 +4,12 @@
   "parameters": {
     "siteName": {
       "value": "sentiawordpress"
+    },
+    "dockerRegistryUrl": {
+      "value": "https://sentiacr.azurecr.io"
+    },
+    "dockerRegistryUsername": {
+      "value": "sentiacr"
     }
   }
 }

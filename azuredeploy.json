@@ -7,7 +7,14 @@
       "metadata": {
         "description": "The name of the function app that you wish to create."
       }
+    },
+    "dockerRegistryUrl": {
+      "type": "string"
+    },
+    "dockerRegistryUsername": {
+      "type": "string"
     }
+
   },
   "variables": {
     "servicePlanName": "[concat(parameters('siteName'), '-ServicePlan')]"
@@ -39,6 +46,14 @@
         "siteConfig": {
           "name": "[parameters('siteName')]",
           "appSettings": [
+            {
+              "name": "DOCKER_REGISTRY_SERVER_URL",
+              "value": "[parameters('dockerRegistryUrl')]"
+            },
+            {
+              "name": "DOCKER_REGISTRY_SERVER_USERNAME",
+              "value": "[parameters('dockerRegistryUsername')]"
+            },
             {
               "name": "WEBSITES_ENABLE_APP_SERVICE_STORAGE",
               "value": "false"
