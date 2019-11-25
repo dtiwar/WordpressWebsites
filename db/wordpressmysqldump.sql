@@ -1,7 +1,6 @@
 -- MySQL dump 10.16  Distrib 10.1.30-MariaDB, for CYGWIN (i686)
 --
--- Host: sentiamysqlserver.mysql.database.azure.com    Database: wordpress01
--- ------------------------------------------------------
+-- Host: sentiamysqlserver.mysql.database.azure.com    Database: wordpress-- ------------------------------------------------------
 -- Server version	5.6.42.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -16,10 +15,10 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `wordpress01`
+-- Current Database: `wordpress`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `wordpress01` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `wordpress` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
 --
 -- Table structure for table `wp_commentmeta`
