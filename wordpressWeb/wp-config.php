@@ -20,16 +20,37 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'wordpress' );
+
+
+$dbname = getenv('DB_ENV_NAME');
+
+if (empty($dbname)){
+
+	$dbname = wordpress;
+
+}
+$dbuser = getenv('DB_ENV_USER');
+if (empty($dbuser)){
+	$dbuser = 'sentia_user@sentiamysqlserver';
+}
+$dbpassword = getenv('DB_ENV_PASSWORD');
+if (empty($dbpassword)){
+	$dbpassword = 'Welkome@123';
+}
+$dbhost = getenv('DB_ENV_HOST');
+if (empty($dbhost)){
+	$dbhost = 'sentiamysqlserver.mysql.database.azure.com:3306';
+}
+define( 'DB_NAME', $dbname );
 
 /** MySQL database username */
-define( 'DB_USER', 'sentia_user@sentiamysqlserver' );
+define( 'DB_USER', $dbuser );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'Welkome@123' );
+define( 'DB_PASSWORD', $dbpassword );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'sentiamysqlserver.mysql.database.azure.com' );
+define( 'DB_HOST', $dbhost );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
