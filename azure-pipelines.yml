@@ -42,15 +42,3 @@ stages:
        PathtoPublish: '$(Build.SourcesDirectory)/db'
        ArtifactName: 'drop'
        publishLocation: 'Container'
-    - task: AzureMysqlDeployment@1
-    inputs:
-    azureSubscription: 'Pay-As-You-Go (5cdb6541-5702-4c8a-af68-04957368df6e)'
-    ServerName: 'sentiamysqlserver.mysql.database.azure.com'
-    DatabaseName: '$(mysqlsourcedb)'
-    SqlUsername: '$(mysqluser)'
-    SqlPassword: '$(mysqlpass)'
-    TaskNameSelector: 'SqlTaskFile'
-    SqlFile: '$(Build.SourcesDirectory)/db/wordpressmysqldump.sql'
-    IpDetectionMethod: 'AutoDetect''
-
-     
