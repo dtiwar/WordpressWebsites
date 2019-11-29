@@ -42,5 +42,3 @@ stages:
        PathtoPublish: '$(Build.SourcesDirectory)/db'
        ArtifactName: 'drop'
        publishLocation: 'Container'
-
-     

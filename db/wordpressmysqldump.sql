@@ -18,8 +18,6 @@
 -- Current Database: `wordpress`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `wordpress` /*!40100 DEFAULT CHARACTER SET latin1 */;
-
 --
 -- Table structure for table `wp_commentmeta`
 --
