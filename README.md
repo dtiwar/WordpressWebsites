@@ -4,16 +4,12 @@
 This section presents the documentation about the process solution [assigment](https://github.com/sentialabs/public-cloud-recruitment/blob/master/ASSIGNEMENT.md)
 
 
-## 1. current infrastructure.
+## 1. Current infrastructure and issues.
 
 The customer is currently hosting ten wordpress sites using wordpress multisite in a private datacenter.
 - *10 wordpress instances*
 - They achieve HA  by using 2 servers and having 2 copies of their multisite
 - For the database they are using 2 MySQL servers behind HA proxy to achieve HA
-
-
-### 1.1. Problem/opportunity
-
 - The past few months, they have been having a lot of issues because some of their websites have increased in popularity, especially during certain timeframes.
 - So, the customer has decided to move away from wordpress multisites and have independent Wordpress applications.
 - They have also pointed out that they have 5 more sites in the making that will reach Production in the next 12 months.
@@ -26,12 +22,12 @@ We have undertaken the task to design the future state of this environment in th
 - Be scalable and flexible.
 - Be futureproof and expandable with new WordPress sites with minimal effort.
 
-#### 1.2.1. Part 1 - Transformation and Migration to the Public Cloud
+### 1.1 Part 1 - Transformation and Migration to the Public Cloud
 - Use control version system to IaC templates. 
 - Provide a design for the designated Azure architecture.
 - Provide Azure ARM templates.
 
-#### 1.2.2. Part 2 - CI/CD
+### 1.2 Part 2 - CI/CD
 - Provide a design for the CI/CD pipeline that you will use to deliver the changes to the environment,every time the client updates any of their WordPress applications in GIT
 
 ### 1.3. Deliverables
