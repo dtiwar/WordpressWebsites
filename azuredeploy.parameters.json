@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "dockerRegistryPassword": {
-      "value": "fmhl5zZ0=KcG04XXwyWAnOvX/6QncAPF"
+      "value": "fQ5z+4a4XTRRHeONUFPSL9=YKqHFsd3l"
     },
     "siteName": {
       "value": "sentiawordpress"
@@ -15,5 +15,4 @@
       "value": "sentiacr"
     }
   }
-
 }
