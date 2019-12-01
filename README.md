@@ -1,5 +1,4 @@
 ## Documentation 
-test the CICD
 
 
 This section presents the documentation about the process solution [assigment](https://github.com/sentialabs/public-cloud-recruitment/blob/master/ASSIGNEMENT.md)
