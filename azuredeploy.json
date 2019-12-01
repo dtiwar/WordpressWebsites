@@ -16,15 +16,6 @@
     },
     "dockerRegistryPassword": {
       "type": "string"
-    },
-    "webappsites": {
-      "type": "array",
-      "defaultValue": [
-        "sentiawordpress",
-        "sentiawordpressTEST",
-        "sentiawordpressPREPROD",
-        "sentiawordpressPROD"
-      ]
     }
 
   },
@@ -52,12 +43,8 @@
     {
       "apiVersion": "2016-08-01",
       "type": "Microsoft.Web/sites",
-      "name": "[parameters('webappsites')[copyIndex()]]",
+      "name": "[parameters('siteName')]",
       "location": "[resourceGroup().location]",
-      "copy": {
-        "name": "webappsites",
-        "count": "[length(parameters('webappsites'))]"
-      },
       "properties": {
         "siteConfig": {
           "name": "[parameters('siteName')]",
@@ -79,8 +66,8 @@
               "value": "false"
             }
           ],
-          "linuxFxVersion": "DOCKER|sentiacr.azurecr.io/dtiwarwordpresswebsites:latest"
-
+          "linuxFxVersion": "DOCKER|sentiacr.azurecr.io/dtiwarwordpresswebsites:170"
+          
         },
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('servicePlanName'))]"
       },
